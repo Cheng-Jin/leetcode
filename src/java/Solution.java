@@ -1,4 +1,4 @@
-package cs.nju.edu.cn.solution;
+package java;
 
 import java.util.ArrayList;
 import java.util.BitSet;
@@ -12,7 +12,7 @@ public class Solution {
 
 		List<Character> data = new ArrayList<>();
 		List<Integer> index = new ArrayList<>();
-		BitSet flag = new BitSet();// ±êÖ¾ÊÕ¹ºÆ¥Åä
+		BitSet flag = new BitSet();// ï¿½ï¿½Ö¾ï¿½Õ¹ï¿½Æ¥ï¿½ï¿½
 		//
 		// data.add('#');
 		// index.add(-1);
@@ -189,9 +189,9 @@ public class Solution {
 
 	public int largestRectangleArea(int[] height) {
 		int maxarea = height.length;
-		for (int i = 0; i < height.length; i++) { // ¶ÔËùÓÐµÄÖ±·½Í¼
+		for (int i = 0; i < height.length; i++) { // ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½Ö±ï¿½ï¿½Í¼
 			int minheight = height[i];
-			for (int j = i; j < height.length; j++) {// ¶Ôµ±Ç°Ö±·½Í¼ºóÃæµÄÍ¼
+			for (int j = i; j < height.length; j++) {// ï¿½Ôµï¿½Ç°Ö±ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½ï¿½Í¼
 				if (minheight == 1)
 					break;
 				if (height[j] < minheight)
